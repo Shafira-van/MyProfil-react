@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap");
+
+/* 
+font-family: 'Fredoka One', cursive;
+font-family: 'Poppins', sans-serif; */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #32485c;
+  background-color: #fcdfd4;
+  font-family: "Poppins", sans-serif;
+}
+
+.body {
+  width: 100%;
+  object-fit: fill;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: initial;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.kontenFull {
+  background-image: url(https://raw.githubusercontent.com/Shafira-van/MyProfil/main/img/bg.png);
+  background-size: contain;
+  background-repeat: repeat-y;
+  min-height: 100vh;
+}
+/* nav */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 20px;
+  border-bottom: 1px solid #e2b091;
+}
+
+nav img {
+  background-color: #fcdfd4;
+  width: 4%;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-left: 1vw;
+  margin: 0.2vw;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li a {
+  color: #32485c;
+  margin: 0vw 1vw;
+  padding: 0.1vw 0.6vw;
+  font-size: 2vw;
+  
+}
+
+.navText a:hover {
+  border-bottom: #8f6c61 solid 0.4vw;
+  color : #8f6c61;
+}
+
+.navText li a.active {
+  border-bottom: #8f6c61 solid 0.4vw;
+    color: #8f6c61;
+}
+
+#more {
+  background-color: #eabcac;
+  display: flex;
+  width: 83%;
+  margin-left: 7%;
+  padding: 0 2vw;
+  justify-content: center;
+  border-bottom: 1px solid #e2b091;
+  padding-bottom: 1vw;
+}
+
+#more a {
+  color: #32485c;
+  background-color: #eabcac;
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+#more a:hover {
+  color: #5a4843;
+}
+/* header */
+
+.header {
+  width: 83%;
+  margin: 0 7%;
+  background-color: #eabcac;
+  padding: 2vw;
+  border-bottom: 1px solid #e2b091;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.konten {
+  margin: 2vw;
+}
+
+#textHeader {
+  background-color: #eabcac;
+}
+
+.header p {
+  font-size: 1.8vw;
+}
+
+.header h1 {
+  font-size: 2.6vw;
+}
+
+.header p,
+h1 {
+  background-color: #eabcac;
+}
+
+.konten {
+  background-color: #eabcac;
+  padding-left: 10vw;
+}
+
+#textHeader {
+  margin: 0vw 0vw 2vw 0vw;
+}
+
+#button {
+  background-color: #eabcac;
+}
+#button a {
+  background-color: #e2b091;
+  color: #32485c;
+  border-radius: 2vw;
+  border: #32485c solid 0.1px;
+  height: 2vw;
+  width: 14vw;
+  margin: 0vw;
+  padding: 0.8vw 1.8vw;
+  font-size: 1.2vw;
+}
+
+#button a:hover {
+  background-color: #fcdfd4;
+}
+
+.header img {
+  width: 30%;
+  object-fit: cover;
+  background-color: #eabcac;
+  padding-right: 10vw;
+}
+
+/* blog */
+.blog {
+  width: 83%;
+  margin: 0 7%;
+  background-color: #eabcac;
+  padding: 2vw 2vw 0.4vw 2vw;
+}
+#textBlog {
+  background-color: #eabcac;
+}
+
+#textBlog p,
+h3 {
+  background-color: #eabcac;
+}
+
+#textBlog h3 {
+  padding: 0 0 1vw 0;
+  font-size: 3vw;
+}
+
+#textBlog p {
+  font-size: 1.6vw;
+}
+
+#listBlog ul {
+  padding: 0.8vw 0 0 0;
+  background-color: #eabcac;
+}
+#listBlog li {
+  border: black solid 1px;
+  border-radius: 2vw;
+  background-color: #e2b091;
+  margin-bottom: 1vw;
+  padding: 0vw 2vw 1vw 2vw;
+}
+
+#flexBlog {
+  background-color: #e2b091;
+  display: flex;
+  justify-content: space-between;
+}
+#listBlog p,
+h4 {
+  background-color: #e2b091;
+  font-size: 1.4vw;
+}
+
+#listBlog h4 {
+  background-color: #e2b091;
+  color: #32485c;
+  padding: 1vw 0vw 0vw 0vw;
+  font-size: 1.8vw;
+}
+
+#listBlog span {
+  background-color: #e2b091;
+  color: #32485c;
+  font-weight: bold;
+  font-size: 1.2vw;
+  margin-right: 1vw;
+  margin-top: 0vw;
+}
+
+#listBlog i {
+  background-color: #e2b091;
+}
+
+#listBlog h4:hover {
+  color: #5a4843;
+  text-decoration: underline;
+}
+/* project */
+.project {
+  width: 83%;
+  margin: 0 7%;
+  background-color: #eabcac;
+  padding: 2vw 2vw 0.4vw 2vw;
+}
+
+#textProject {
+  background-color: #eabcac;
+}
+
+#textProject h3 {
+  padding: 0 0 1vw 0;
+  font-size: 3vw;
+}
+
+#textProject p {
+  background-color: #eabcac;
+  font-size: 1.6vw;
+}
+
+#listProject ul {
+  padding: 0.8vw 0 0 0;
+  background-color: #eabcac;
+}
+
+#listProject h4 {
+  background-color: #e2b091;
+  color: #32485c;
+  font-size: 1.8vw;
+  padding: 1vw 0vw 0vw 0vw;
+}
+
+#projectBlog a:hover{
+  text-decoration: underline;
+  color:#5a4843;
+}
+#listProject li {
+  border: black solid 1px;
+  border-radius: 2vw;
+  background-color: #e2b091;
+  margin-bottom: 1vw;
+  padding: 0 2vw 1vw 2vw;
+}
+
+#projectBlog {
+  background-color: #e2b091;
+  display: flex;
+  justify-content: space-between;
+}
+#projectBlog a {
+  background-color: #e2b091;
+}
+
+#listProject p {
+  background-color: #e2b091;
+  font-size: 1.4vw;
+}
+
+#listProject span {
+  background-color: #e2b091;
+  color: #32485c;
+  font-weight: bold;
+  font-size: 1.2vw;
+  margin-right: 1vw;
+}
+
+#listProject i {
+  background-color: #e2b091;
+}
+
+
+/*  about  */
+
+.about {
+  width: 83%;
+  margin: 0 7%;
+  padding: 2vw 2vw 0.4vw 2vw;
+  background-color: #eabcac;
+}
+
+.about h3 {
+  padding-top: 2vw;
+  font-size: 3vw;
+  padding-bottom: 2vw;
+}
+.isiAbout {
+  padding-bottom: 2vw;
+  background-color: #eabcac;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.isiAbout p,
+img {
+  background-color: #eabcac;
+}
+
+.isiAbout img {
+  display: inline-block;
+  object-fit: cover;
+  width: 14vw;
+  border-radius: 80vw;
+}
+
+#textAbout {
+  padding: 0 2vw 0 2vw;
+  text-align: justify;
+  font-size: 1.4vw;
+}
+
+.about a:hover {
+  color: #8f6c61;
+  text-decoration: underline;
+}
+
+.about p {
+  background-color: #eabcac;
+  font-size: 2.4vw;
+}
+.about h4 {
+  background-color: #eabcac;
+  font-size: 2.4vw;
+  font-weight: bold;
+  color: #32485c;
+}
+#listFavorite {
+  background-color: #eabcac;
+}
+
+#listFavorite img {
+  width: 7vw;
+  border-radius: 0.4vw;
+  margin: 2vw 2vw 0vw 2vw;
+}
+
+#listFavorite a {
+  background-color: #eabcac;
+  font-size: 2vw;
+}
+
+#playist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #eabcac;
+}
+
+#video {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 2vw;
+  align-items: center;
+  background-color: #eabcac;
+}
+
+#listSkill {
+  background-color: #eabcac;
+  padding-left: 4vw;
+  padding-bottom: 2vw;
+}
+
+#listSkill li {
+  background-color: #eabcac;
+  font-size: 1.6vw;
+  list-style: circle;
+}
+/* footer */
+footer {
+  padding: 1vw 2vw 1vw 2vw;
+  background-color: black;
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+  padding-bottom: 2vw;
+}
+footer h3,
+h4 {
+  background-color: black;
+  color: white;
+}
+
+footer h3 {
+  font-size: 3vw;
+  text-align: center;
+  margin: 0.4vw;
+}
+footer h4 {
+  font-size: 1.8vw;
+  text-align: center;
+  margin: 0.2vw;
+}
+
+.imgSosmed {
+  background-color: black;
+  display: flex;
+  padding: 0;
+}
+
+.imgSosmed a {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imgSosmed p {
+  background-color: black;
+  color: white;
+  border-radius: 4vw;
+  font-size: 1.4vw;
+  width: 8vw;
+  height: 1.6vw;
+}
+
+.imgSosmed p:hover {
+  color: #eabcac;
+}
+.imgSosmed img {
+  background-color: black;
+  width: 20%;
+  margin-top: 0vw;
+}
+
+@media only screen and (max-width: 480px) {
+  nav img {
+    width: 7%;
+  }
+
+  nav li a {
+    margin: 0px 0.6vw;
+    padding: 0vw 1vw;
+    font-size: 4vw;
+  }
+
+  #textHeader p {
+    font-size: 2.6vw;
+  }
+
+  #textHeader h1 {
+    font-size: 3.2vw;
+  }
+
+  .konten {
+    padding-left: 4vw;
+  }
+  #button a {
+    font-size: 2vw;
+  }
+
+  #more a {
+    font-size: 2.4vw;
+  }
+  #flexBlog h4 {
+    font-size: 2.4vw;
+  }
+  #listBlog span {
+    font-weight: bold;
+    font-size: 2vw;
+    margin-right: 1vw;
+    margin-top: 0.8vw;
+  }
+  #listBlog p {
+    font-size: 2.2vw;
+  }
+
+  #textBlog p {
+    font-size: 2.4vw;
+  }
+
+  #projectBlog h4 a {
+    font-size: 2.4vw;
+  }
+
+  #listProject span {
+    font-weight: bold;
+    font-size: 2vw;
+    margin-right: 1vw;
+    margin-top: 0.8vw;
+  }
+
+  #listProject p {
+    font-size: 2.2vw;
+  }
+
+  #textProject p {
+    font-size: 2.4vw;
+  }
+  .isiAbout {
+    align-items: center;
+  }
+  #textAbout {
+    font-size: 2vw;
+  }
+  #listSkill li {
+    font-size: 2vw;
+  }
+  #listFavorite a {
+    font-size: 2vw;
+  }
+  .imgSosmed p {
+    font-size: 2vw;
+  }
+}
