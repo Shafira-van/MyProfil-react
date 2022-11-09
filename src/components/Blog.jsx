@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types"
 
 function Blog(props) {
   const [blog, setBlogs] = useState([
@@ -62,5 +63,10 @@ function Blog(props) {
       </div>
     </>
   );
+}
+
+Blog.propTypes = {
+  dataAwal: PropTypes.number,
+  dataAkhir : PropTypes.number
 }
 export default Blog;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 function Project(props) {
   const [project, setBlogs] = useState([
@@ -84,4 +85,8 @@ function Project(props) {
   );
 }
 
+Project.propTypes = {
+  dataAwal: PropTypes.number,
+  dataAkhir: PropTypes.number,
+};
 export default Project;

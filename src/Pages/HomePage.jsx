@@ -16,7 +16,7 @@ function Home() {
   return (
     <div className="kontenFull">
       <Header />
-      <Blog dataAwal={"0"} dataAkhir={3} />
+      <Blog dataAwal={0} dataAkhir={3} />
       {!moreBlog && (
         <div id="more">
           <Link onClick={() => setMoreBlog(true)} to="/blog">
@@ -24,7 +24,7 @@ function Home() {
           </Link>
         </div>
       )}
-      <Project dataAwal={"0"} dataAkhir={3} />
+      <Project dataAwal={0} dataAkhir={3} />
       {!moreProject && (
         <div id="more">
           <Link onClick={() => setMoreProject(true)} to="/project">
